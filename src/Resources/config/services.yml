@@ -1,0 +1,9 @@
+services:
+  dbout.assets_helper:
+    class: Dbout\AssetsHelperBundle\Helper\AssetsHelper
+    arguments: ['@assets.packages', '@Symfony\Component\HttpFoundation\UrlHelper']
+  Dbout\AssetsHelperBundle\Twig\Extension\AssetExtension:
+    tags: ['twig.extension']
+    arguments: ['@dbout.assets_helper']
+
+  Dbout\AssetsHelperBundle\Helper\AssetsHelperInterface: '@dbout.assets_helper'

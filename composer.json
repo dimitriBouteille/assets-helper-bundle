@@ -1,0 +1,30 @@
+{
+  "name": "dbout/assets-helper-bundle",
+  "description": "Symfony Asset Component helper",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "keywords": ["css", "js", "image", "asset", "helper", "symfony"],
+  "homepage": "https://github.com/dimitriBouteille/assets-helper-bundle",
+  "support": {
+    "issues": "https://github.com/dimitriBouteille/assets-helper-bundle/issues"
+  },
+  "authors": [
+    {
+      "name": "Dimitri Bouteille",
+      "email": "bonjour@dimitri-bouteille.fr",
+      "homepage": "https://github.com/dimitriBouteille",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "symfony/asset":            "^4.3",
+    "symfony/framework-bundle": "^4.3 || ^5.0",
+    "twig/twig":                "^2.0 || ^3.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Dbout\\AssetsHelperBundle\\": "src/"
+    }
+  }
+}
